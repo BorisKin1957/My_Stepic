@@ -26,5 +26,5 @@ for i in range(len(matrix)):
             matrix[i][j] = 1
 for row in matrix:
     for col in row:
-        print(col, end=' ')
+        print(str(col).ljust(3), end=' ')
     print()
