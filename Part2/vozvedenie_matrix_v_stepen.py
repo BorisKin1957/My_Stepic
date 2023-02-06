@@ -25,9 +25,8 @@ n = int(input())
 matrix_in = [[int(i) for i in input().split()] for _ in range(n)]
 
 k = int(input())
-matrix = mult_matrix(matrix_in, matrix_in, n)
 
-for i in range(k - 2):
+for i in range(k - 1):
     matrix = mult_matrix(matrix, matrix_in, n)
 
 for i in range(n):
