@@ -10,7 +10,7 @@ n = int(input())
 
 sp = [[] for _ in range(n)]
 
-for i in range(len(s) // n + 1):
+for i in range(0, len(s), n):
     for j in range(n):
         if j < len(s):
             sp[j].append(s[j])
