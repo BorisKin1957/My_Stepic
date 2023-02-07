@@ -12,7 +12,7 @@ for _ in range(n):
 s = []
 for i in  range(n):
     for j in range(n):
-        if i <= j:
+        if i <= j and i >= n - 1 - j or i >= j and i >= n - 1 - j:
             s.append(matrix[i][j])
 
 print(max(s))

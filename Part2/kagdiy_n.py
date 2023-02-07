@@ -5,15 +5,15 @@
 Программа разделяет список на вложенные подсписки так,
 что n последовательных элементов принадлежат разным подспискам.'''
 
-s = input()
+s = input().split()
 n = int(input())
 
-sp = [[] for _ in range(n)]
+matrix = [[] for _ in range(n)]
 
 for i in range(0, len(s), n):
     for j in range(n):
         if j < len(s):
-            sp[j].append(s[j])
+            matrix[j].append(s[j])
     s = s[j + 1:]
 
-print(sp)
+print(matrix)

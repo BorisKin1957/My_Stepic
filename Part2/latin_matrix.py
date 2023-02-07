@@ -6,7 +6,7 @@
 
 
 def latin(matrix, n):
-    global flag
+#    global flag
     flag = True
     for i in range(n):
         for j in range(n):
@@ -28,6 +28,7 @@ n = int(input())
 
 matrix = [input().split() for _ in range(n)]
 
+
 matrix1 = []
 
 for i in range(n):
@@ -38,11 +39,16 @@ for i in range(n):
 
 sort_row(matrix, n)
 
-latin(matrix, n)
+flag = latin(matrix, n)
 
 if flag:
     sort_row(matrix1, n)
-    latin(matrix1, n)
+    flag = latin(matrix1, n)
+
+for i in range(len(matrix[0]) - 1):
+    if matrix[0][i + 1] == matrix[0][i]:
+        flag = False
+        break
 
 if flag:
     print('YES')
