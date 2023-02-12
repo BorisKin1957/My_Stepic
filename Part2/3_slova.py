@@ -21,3 +21,7 @@ for i in range(len(s)):
             break
 
 print(result)
+
+#Вот крутое решение
+# a, b, c = input().split()
+# print(['NO', "YES"][set(a) == set(b) == set(c)])
