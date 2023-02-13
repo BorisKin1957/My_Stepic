@@ -27,3 +27,6 @@ for word in input().lower().split():
         slova.add(s)
 
 print(len(slova))
+
+
+# Вместо replace() в решении следовало применить метод strip('.,;:-?!')
