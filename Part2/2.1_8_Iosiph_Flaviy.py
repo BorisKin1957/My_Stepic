@@ -22,7 +22,7 @@ while len(s) > 1:
             s_new = s[1:]
             s_new.append(s[0])
             s = s_new
-        s = s_new[1:]
+        s = s_new[1:]  # удаляю К-го с первой позиции списка
     else:
         s = s[-1:]
 
