@@ -12,18 +12,16 @@ n человек, от 1 до n, стоят в кругу.
 И так по кругу, пока в списке не остался последний член.
 '''
 
-n, k = int(input()), int(input())
-s = []
-for i in range(1, n + 1):
-    s.append(i)
-while len(s) > 1:
-    if k > 1:
-        for i in range(k - 1):
-            s_new = s[1:]
-            s_new.append(s[0])
-            s = s_new
-        s = s_new[1:]  # удаляю К-го с первой позиции списка
-    else:
-        s = s[-1:]
+s = list(range(1, int(input()) + 1))
+k = int(input())
 
-print(*s)
+if k == 1:
+    print(s[-1])
+else:
+    while len(s) > 1:
+        for i in range(k - 1):
+            st = s[1:] + s[:1]
+            s = st
+        s = st[1:]
+
+    print(*s)
