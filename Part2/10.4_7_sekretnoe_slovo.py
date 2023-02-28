@@ -41,3 +41,22 @@ for key1, value1 in mydict1.items():
 
 for i in s:
     print(mydict1[i], end='')
+
+'''ВАРИАНТ
+основан на другом представлении mydict2
+в котором ключи и значения поменяны местами по сравнению с вариантом 1
+Как результат, код короче'''
+
+# s = input()
+# mydict1 = {}
+# mydict2 = {}
+#
+# for i in s:
+#     mydict1[i] = mydict1.get(i, 0) + 1
+#
+# for i in range(int(input())):
+#     k, v = input().split(': ')
+#     mydict2.update({int(v): k})
+#
+# for i in s:
+#     print(mydict2[mydict1[i]], end='')
