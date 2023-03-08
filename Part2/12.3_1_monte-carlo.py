@@ -19,6 +19,6 @@ for _ in range(n):
     if x ** 3 + y ** 4 + 2 >= 0 and y ** 2 + 3 * x <= 2:
         k += 1
 
-print((k / n) * s0)
+print((k/n)*s0)
 
 '''7.13736'''
