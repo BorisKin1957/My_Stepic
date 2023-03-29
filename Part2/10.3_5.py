@@ -36,4 +36,4 @@ for i in pets:
     else:
         result[i[1:]] = [i[0]]
 
-# print(result)
+print(result)
