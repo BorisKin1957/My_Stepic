@@ -32,7 +32,7 @@ data = [['Tokyo', 35676000, 'primary'],
         ['Paris', 9904000, 'primary']]
 
 filter_data = filter(lambda city: city[1] > 10 ** 7 and city[2] == 'primary', sorted(data))
-long_data = map(lambda city: city[:-1], filter_data)
-big_city = reduce(lambda city1, city2: city1 + city2[0] + ', ', long_data, 'Cities: ')
+long_data = list(map(lambda city: city[:-1], filter_data))
+big_city = reduce(lambda acc, city: acc + city[0] + ', ', long_data, 'Cities: ')
 
 print(big_city[:-2])
