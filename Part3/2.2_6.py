@@ -61,4 +61,4 @@ for i in range(n - 1):
         flag = False
         break
 
-print([ 'Сериал снять не удастся', ', '.join(sorted(lang_set))][flag])
+print(['Сериал снять не удастся', ', '.join(sorted(lang_set))][flag])
