@@ -53,7 +53,7 @@ with open('forbidden_words.txt') as f, open(input()) as fn:
     for bad_word in rpnz:
         txt_l = txt_l.replace(bad_word, '*' * len(bad_word))
     for i in range(len(txt)):
-        if txt_l[i] not in '*':
-            print(txt[i], end='')
-        else:
+        if txt_l[i] == '*':
             print('*', end='')
+        else:
+            print(txt[i], end='')

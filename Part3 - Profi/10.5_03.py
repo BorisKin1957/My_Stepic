@@ -57,6 +57,8 @@ def primes(left, right):
                 flag = False
         if flag and value > 1:
             yield value
+
+
 generator = primes(1, 15)
 
 print(*generator)

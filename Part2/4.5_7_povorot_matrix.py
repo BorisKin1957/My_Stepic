@@ -6,6 +6,8 @@ n = int(input())
 
 matrix = [input().split() for _ in range(n)]
 
+print(matrix)
+
 for i in range(n):
     new = []
     for j in range(n):
